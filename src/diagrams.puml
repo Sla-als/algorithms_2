@@ -1,0 +1,18 @@
+@startuml
+rectangle Сортировка пузырьком {
+start
+: Ввод: получаем неотсортированный целочисленный массив `int [] arr`;
+: Инициализируем булеан-переменную `boolean swapped` со значением `true`;
+while (swapped == true) is (Да)
+:swaped = false;
+while ( Цикл от i = 0  до arr.lenght()) is (Да)
+ if (arr[j-1] > arr[j]) then (Да)
+ :swapped;
+ :swaped = true;
+ endif
+ endwhile(Нет)
+ endwhile(Нет)
+ :Вернуть отсортированный массив;
+ stop
+}
+@enduml
